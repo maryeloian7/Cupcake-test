@@ -1,0 +1,42 @@
+.table {
+    width: max-content;
+    margin: 50px 0 0 50px;
+    display: flex;
+    border-left: solid 2px rgba(0, 0, 255, 0.542);
+    border-top: solid 2px rgba(0, 0, 255, 0.542);
+    border-right: solid 2px rgba(0, 0, 255, 0.542);
+}
+
+.top_line {
+    /* height: 300px; */
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+._First {
+    width: 100px;
+}
+
+._Second {
+    width: max-content;
+    min-width: 100px;
+}
+
+._Third {
+    width: 100px;
+}
+
+.top_line:not(:last-child) {
+    border-right: solid 2px rgba(0, 0, 255, 0.542);
+}
+
+.header {
+    border-bottom: solid 2px rgba(0, 0, 255, 0.542);
+    padding: 10px 0;
+}
+
+.minRate {
+    background-color: aqua;
+}
