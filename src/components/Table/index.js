@@ -61,12 +61,12 @@ const Table = () => {
         <div className="top_line">
           <div className="header">Pair name/market</div>
           {TABLE_ROWS_NAMES.map((row) => {
-            return <div className="header">{row}</div>;
+            return <div className="header" key={row}>{row}</div>;
           })}
         </div>
         {sourceValues.map((source, index) => {
           return (
-            <div className="top_line _Second">
+            <div className="top_line _Second" key={index}>
               <div className="header">{TABLE_COLUMNS_NAMES[index]}</div>
               <div
                 className={clsx(
